@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A demo Tinder-like app built with Flutter and Firebase. Originally based on [fredrikbogg/tinder_app_flutter](https://github.com/fredrikbogg/tinder_app_flutter), fully migrated to Dart 3 null safety and updated to work with current Flutter and Firebase versions.
+A demo Tinder-like app built with Flutter and Firebase. Fully migrated to Dart 3 null safety and updated to work with current Flutter and Firebase versions.
 
 Tested on Android only.
 
