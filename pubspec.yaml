@@ -1,0 +1,41 @@
+name: tinder_app_flutter
+description: Tinder app made with Flutter
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  numberpicker: ^2.1.1
+  image_picker: ^1.1.2
+  firebase_storage: ^12.3.2
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4
+  percent_indicator: ^4.2.3
+  shared_preferences: ^2.3.3
+  provider: ^6.1.2
+  intl: ^0.19.0
+  flutter_plugin_android_lifecycle: ^2.0.19
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - images/
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: fonts/Nunito-Regular.ttf
+        - asset: fonts/Nunito-SemiBold.ttf
+        - asset: fonts/Nunito-Bold.ttf
