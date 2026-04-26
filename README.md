@@ -1,60 +1,64 @@
-# Tinder App Flutter
+# Tinder App Clone
 
 ## Introduction
 
-This is a demo application built with the goal to learn about Flutter and to create a fun application.
+A demo Tinder-like app built with Flutter and Firebase. Originally based on [fredrikbogg/tinder_app_flutter](https://github.com/fredrikbogg/tinder_app_flutter), fully migrated to Dart 3 null safety and updated to work with current Flutter and Firebase versions.
 
 Tested on Android only.
 
 ## Technologies & Architecture
 
-Flutter, Dart
+- **Flutter** 3.41.7
+- **Dart** 3.11.5
+- **Android Gradle Plugin** 8.9.1
+- **Gradle** 8.11.1
 
 #### Firebase
 
-- Authentication
-- Firestore
+- Authentication (Email/Password)
+- Cloud Firestore
 - Storage
 
-#### Architecture components
+#### Architecture
 
-- Provider
+- Provider (state management)
 
 ## Features
 
-**Start screen:** Login/Register
+**Start screen:** Login / Register
 
-**Profile screen:** Change image, change bio, logout
+**Profile screen:** Change photo, edit bio, logout
 
-**Chats screen:** List of chats(matches)
+**Chats screen:** List of matched users and conversations
 
-**Chat screen:** Messaged sorted by timestamp, send and show messages
+**Chat screen:** Real-time messages sorted by timestamp
 
-**Match screen:** Image and information of person, like/dislike
+**Match screen:** Swipe like/dislike on other users
 
-**Matched screen:** Show users included in match
+**Matched screen:** Shown when two users mutually like each other
 
-**General:** Auto login, basic error handling, progress bar
-
-**Firebase:** Storing user info, chats, images
+**General:** Auto login, error handling, progress indicators
 
 ## Setup
 
 #### Requirements
 
-- Basic knowledge about Flutter
-- Basic knowledge about Android
-- Basic knowledge about Firebase
-- Flutter SDK version >= 2.0.0 (tested and works with 2.0.0)
+- Flutter SDK >= 3.0.0
+- Android Studio (for emulator and Android SDK)
+- A Firebase project (Blaze plan required for Storage)
 
 #### Firebase
 
-- Setup Authentication and use the Sign-in method 'Email/Password'
-- Setup Firestore
-- Setup Storage
-- Replace the file [google-services.json](android/app/google-services.json)
+1. Create a project at [console.firebase.google.com](https://console.firebase.google.com)
+2. Add an Android app with package name `com.harshdas.tinder_app_flutter`
+3. Enable **Authentication** → Email/Password
+4. Create a **Firestore** database (test mode)
+5. Enable **Storage** (requires Blaze plan)
+6. Download `google-services.json` and place it at `android/app/google-services.json`
 
-#### Project
+#### Run
 
-1. Download and open the project in e.g Android Studio
-2. Connect your Android phone or use the emulator to start the application
+```
+flutter pub get
+flutter run
+```
